@@ -13,6 +13,7 @@
   width: 83%;
   margin: 0 auto;
   color: #fff;
+  position:relative;
 }
 
 .item {
@@ -245,12 +246,14 @@ background-repeat: no-repeat;
   -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
   transform: rotate(-7deg);
   font-size: 1.25em;
+  display: inline-block;
+  width:30%;
 }
 
-.item:nth-child(11) ul li:nth-child(even) {
+/*.item:nth-child(11) ul li:nth-child(even) {
   float:right;
   margin-right: 440px;
-}
+}*/
 
 .item:nth-child(12){
   background-image: url("images/slide12.png");
@@ -343,41 +346,17 @@ background-repeat: no-repeat;
 
 .fa-angle-left {
   position: absolute;
-  margin-top: 36.5%;
-  margin-left: 35%;
+  bottom: -15%;
+  left: 40%;
+  padding:10px;
 }
 
 .fa-angle-right {
   position: absolute;
-  margin-top: 1%;
-  margin-left: 62%;
+  bottom: -15%;
+  right: 40%;
+  padding:10px;
 }
-/*}
-.slick-prev {
-    margin: 21% auto 0 40%;
-}*/
-
-/*.slick-prev:after {
-  content: "\f177";
-  font: 40px/1 'FontAwesome';
-  color: #393939;
-}*/
-
-/*.slick-next {
-    margin: 21% 45% 0 0;
-}*/
-
-/*.slick-next:after {
-	   content: "\f178";
-     font: 40px/1 'FontAwesome';
-     color: #393939;
-}*/
-
-/*.slick-prev:hover:after,
-.slick-next:hover:after {
-    color: #ff0051;
-}*/
-
 
 button {
 color: #393939;
@@ -390,15 +369,41 @@ button:focus {
 @media screen and (max-width: 1024px){
   h1 {
     font-size: 1.5em;
-    /*margin-right: 10px;*/
+  }
+  .item:nth-child(11) ul li {
+    font-size: 1em;
+  }
+  .item:nth-child(11) ul li:nth-child(even) {
+    margin-right: 400px;
   }
 }
 
-@media screen and (max-width: 780px){
+/*@media screen and (max-width: 990)*/
+
+@media screen and (max-width: 860px){
   .about {
     font-size: 3em;
   }
+  .item:nth-child(11) ul li:nth-child(even) {
+    margin-right: 380px;
+  }
 }
+
+/*@media screen and (max-width: 800px) {
+  .item:nth-child(11) ul {
+    margin-top: 70px;
+  }
+
+  .item:nth-child(11) ul li {
+    font-family: 'Kalam', cursive;
+    font-size: 1.25em;
+  }
+
+  .item:nth-child(11) ul li:nth-child(even) {
+    float:right;
+    margin-right: 440px;
+  }
+}*/
 
 @media screen and (max-width: 480px){
   .about {
